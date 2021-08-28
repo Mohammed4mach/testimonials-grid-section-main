@@ -1,0 +1,192 @@
+/* Colors */
+/* Fonts */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #ecf2f8;
+}
+
+1 {
+  font-weight: 600;
+}
+
+2 {
+  font-weight: 600;
+}
+
+3 {
+  font-weight: 600;
+}
+
+4 {
+  font-weight: 600;
+}
+
+5 {
+  font-weight: 600;
+}
+
+article {
+  width: 70%;
+  margin: 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  gap: 35px;
+      grid-template-areas: "first first second fifth" "third fourth fourth fifth";
+}
+
+article section {
+  /* General style */
+  border-radius: 12px;
+  color: white;
+  padding: 35px;
+  /* Specified style */
+}
+
+article section .head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 1px 10px;
+  margin-bottom: 17px;
+  width: 150px;
+}
+
+article section .head img {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  grid-row: span 2;
+}
+
+article section .head p:first-of-type {
+  color: #cfcfcf;
+}
+
+article section .head p:last-of-type {
+  color: rgba(207, 207, 207, 0.5);
+}
+
+article section h1 {
+  font-size: 18px;
+  margin-bottom: 17px;
+}
+
+article section > p {
+  color: rgba(207, 207, 207, 0.7);
+}
+
+article section:first-of-type .head img, article section:nth-of-type(4) .head img {
+  border: 2px solid #a479e5;
+}
+
+article section:first-of-type {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: first;
+  background-color: #7541c8;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+}
+
+article section:nth-of-type(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: second;
+  background-color: #48556a;
+}
+
+article section:nth-of-type(3), article section:nth-of-type(5) {
+  background-color: white;
+}
+
+article section:nth-of-type(3) .head p:first-of-type, article section:nth-of-type(5) .head p:first-of-type {
+  color: #48556a;
+}
+
+article section:nth-of-type(3) .head p:last-of-type, article section:nth-of-type(5) .head p:last-of-type {
+  color: rgba(72, 85, 106, 0.5);
+}
+
+article section:nth-of-type(3) h1, article section:nth-of-type(5) h1 {
+  color: #48556a;
+}
+
+article section:nth-of-type(3) > p:last-child, article section:nth-of-type(5) > p:last-child {
+  color: rgba(72, 85, 106, 0.7);
+}
+
+article section:nth-of-type(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: third;
+}
+
+article section:nth-of-type(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: fourth;
+  background-color: #19212e;
+}
+
+article section:nth-of-type(5) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: fifth;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  article {
+    width: 86%;
+    margin: 70px 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 20px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  color: #7541c8;
+}
+/*# sourceMappingURL=style.css.map */
